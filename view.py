@@ -68,3 +68,26 @@ class GUI(QMainWindow):
                    '=': (3, 4),
                   }
 
+
+   
+        # Create the buttons and add them to the grid layout
+        for btnText, pos in buttons.items():
+            self.buttons[btnText] = QPushButton(btnText)
+            self.buttons[btnText].setFixedSize(40, 40)
+            buttonsLayout.addWidget(self.buttons[btnText], pos[0], pos[1])
+        # Add buttonsLayout to the general layout
+        self.generalLayout.addLayout(buttonsLayout)
+
+    def setDisplayText(self, text):
+        """Set display's text."""
+        self.display.setText(text)
+        self.display.setFocus()
+
+    def getDisplayText(self):
+        """Get display's text."""
+        return self.display.text()
+
+    def clearDisplay(self):
+        """Clear the display."""
+        self.setDisplayText('')
+
