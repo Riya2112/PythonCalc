@@ -28,7 +28,9 @@ class GUI(QMainWindow):
         # Create the display and the buttons
         self._createDisplayLED()
         self._createButtons()
- def _createDisplayLED(self):
+
+
+    def _createDisplayLED(self):
         """Create the display."""
         
         # Create the display widget
@@ -68,8 +70,6 @@ class GUI(QMainWindow):
                    '=': (3, 4),
                   }
 
-
-   
         # Create the buttons and add them to the grid layout
         for btnText, pos in buttons.items():
             self.buttons[btnText] = QPushButton(btnText)
@@ -90,4 +90,5 @@ class GUI(QMainWindow):
     def clearDisplay(self):
         """Clear the display."""
         self.setDisplayText('')
+
 
