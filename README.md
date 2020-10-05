@@ -18,3 +18,4 @@
 ###### To run this file use any of the idle or cmd, Here, I can use the Python Idle-3.8 
 To process towards the output firstly install pyqt5 from command prompt before run the file as there is no installation of pyqt5 file in default idle.
 
+![atl text](https://github.com/Riya2112/PythonCalc/blob/main/python-calc.PNG)
