@@ -14,7 +14,10 @@ def main():
     view = GUI()
     view.show()
 
+    model = evaluateExpression
+    Controller(model=model, view=view)
 
+    sys.exit(pycalc.exec_())
 
 if __name__ == '__main__':
 	main()
